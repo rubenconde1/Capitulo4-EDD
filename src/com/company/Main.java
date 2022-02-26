@@ -1,7 +1,16 @@
 package com.company;
 import java.util.Scanner;
+
+/**
+ * Clase que genera todos los numeros primos de 1 hasta un numero maximo especificado por el usuario.
+ * @author Ruben Conde
+ * @version 1.3
+ */
 public class Main {
     public static void main(String[] args) {
+        /**
+         * Creamos un vector e indicamos el numero para la Criba de Erastotenes.
+         */
         Scanner lector = new Scanner(System.in);
         System.out.println("Introduce el número para la criba de Erastótenes: ");
         int numeroCriba = lector.nextInt();
@@ -18,9 +27,13 @@ public class Main {
             System.out.print(vector[i] + "\t");
         }
     }
-    // Generar números primos de 1 a max
+    // Generar numeros primos de 1 a max
     public static int[] generarPrimos (int max)
     {
+        /**
+         * Metodo para generar numeros primos.
+         * @return Devuelve un vector de numeros primos en caso de de ser True, o lo devuelve vacio si es False.
+         */
         int i, j;
         if (max >= 2) {
             // Declaraciones
